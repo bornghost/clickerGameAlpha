@@ -1,20 +1,39 @@
 <html>
-<title>Incremental Game</title>
+<title>Click the thing.</title>
 <head>
 <link rel="stylesheet" type="text/css" href="interface.css" />
 </head>
 <body>
-<p class="footer">This is very much still under development. Hope you didn't come here expecting shit.</p><br/>
+<div class="row">
+	<div class="col-1"><button type=button" name="Clicker" onClick="cookieClick(1)">Get Cookie</button></div>
+	<div class="col-2"></div>
+	<div class="col-2">Cookies: <span id="cookies">0</span></div>
+	<div class="col-7">Cookies per Second: <span id="cps">0</span></div>
+</div>
+<div class="row">
+	<div class="col-1"><button type=button" name="buyCursor" onClick="buyCursor(1)">Buy Cursor</button></div>
+	<div class="col-2">Cost: <span id="cursorCost">10</span></div>
+	<div class="col-2">Cursors: <span id="cursors">0</span></div>
+	<div class="col-7">Each cursor generates 1 cookie per tick.</div>
+</div>
+<div class="row">
+	<div class="col-1"><button type=button" name="buyOven" onClick="buyOven(1)">Buy Oven</button></div>
+	<div class="col-2">Cost: <span id="ovenCost">250</span></div>
+	<div class="col-2">Ovens: <span id="ovens">0</span></div>
+	<div class="col-7">Each oven generates 6 cookies per tick.</div>
+</div>
+<div class="row">
+	<div class="col-1"><button type=button" name="buyBakery" onClick="buyBakery(1)">Buy Bakery</button></div>
+	<div class="col-2">Cost: <span id="bakeryCost">2,000</span></div>
+	<div class="col-2">Bakeries: <span id="bakeries">0</span></div>
+	<div class="col-7">Each bakery generates 24 cookies per tick.</div>
+</div>
+<div class="row">
+	<div class="col-1"><button type=button" name="buyFactory" onClick="buyFactory(1)">Buy Factory</button></div>
+	<div class="col-2">Cost: <span id="factoryCost">10,000</span></div>
+	<div class="col-2">Factories: <span id="factories">0</span></div>
+	<div class="col-7">Each factory generates 96 cookies per tick.</div>
+</div>
 <script type="text/javascript" src="main.js"></script>
-<button class="button" onClick="cookieClick(1)">Make Cookie</button><br/>
-Cookies In Stock: <span id="cookies">0</span><br/>
-Cookies Per Second: <span id="cps">0</span><br/><br/>
-<button class="button" onClick="buyHelper()">Buy Helper</button><br/>
-Helpers: <span id="helpers">0</span><br/>
-Cost: <span id="helperCost">10</span> Cookies<br/><br/>
-<button class="button" onClick="buyCookieMaker()">Buy Cookie Maker</button><br/>
-Cookie Makers: <span id="cookieMakers">0</span><br/>
-Cost: <span id="cookieMakerCost">5</span> Helpers
-
 </body>
 </html>
